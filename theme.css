@@ -1,0 +1,369 @@
+:root {
+  --ink: #1c1c1c;
+  --ink-soft: #292929;
+  --paper: #f8f6ec;
+  --red: #ffde5a;
+  --red-deep: #e9c23d;
+  --gold: #ffde5a;
+  --line: #e1d9b6;
+}
+
+body {
+  font-size: 19px;
+}
+
+html {
+  scroll-padding-top: 150px;
+}
+
+.site-header {
+  height: 146px;
+}
+
+.header-inner {
+  min-height: 146px;
+}
+
+.brand img {
+  width: 168px;
+  height: 168px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.brand-copy strong {
+  font-size: 21px;
+}
+
+.brand-copy small {
+  font-size: 10px;
+}
+
+.main-nav {
+  font-size: 16px;
+}
+
+.nav-cta {
+  font-size: 14px;
+}
+
+.eyebrow {
+  font-size: 13px;
+}
+
+.hero-lead {
+  font-size: 20px;
+  max-width: 560px;
+}
+
+.hero h1 {
+  font-size: clamp(72px, 8vw, 110px);
+}
+
+.section h2,
+.history h2,
+.reviews h2,
+.contact-cta h2 {
+  font-size: clamp(60px, 6.5vw, 86px);
+}
+
+.button {
+  font-size: 13px;
+  padding: 18px 23px;
+}
+
+.section-intro,
+.history-copy > p:not(.eyebrow),
+.why-list p,
+.review-card > p {
+  font-size: 17px;
+}
+
+.service-card h3,
+.why-list h3 {
+  font-size: 26px;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+.footer-col {
+  font-size: 15px;
+}
+
+.site-header,
+.proof-strip,
+.footer {
+  background-color: #1c1c1c;
+}
+
+.hero-shade {
+  background: linear-gradient(90deg, rgba(8, 8, 8, .96) 0%, rgba(8, 8, 8, .82) 44%, rgba(8, 8, 8, .28) 100%), linear-gradient(0deg, rgba(8, 8, 8, .38), transparent 60%);
+}
+
+.nav-cta,
+.button-red {
+  color: #1c1c1c;
+}
+
+.nav-cta:hover,
+.button-red:hover {
+  background: #ffdf35;
+}
+
+.contact-cta {
+  background: #ffde5a;
+  color: #1c1c1c;
+}
+
+.contact-cta .eyebrow {
+  color: #3e3500;
+}
+
+.contact-cta h2 em {
+  color: #1c1c1c;
+}
+
+.button-light {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.button-light:hover {
+  background: #292929;
+}
+
+.history {
+  background: #1c1c1c;
+}
+
+.hero-note {
+  left: 0;
+  right: auto;
+}
+
+.brand img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-brand .brand img {
+  width: 100px;
+  height: 100px;
+}
+
+.history-image {
+  background-image: linear-gradient(0deg, #080808aa, #0808081c), url("https://autoeletricajoaogualberto.com.br/wp-content/uploads/2024/10/elevadorclassico.png");
+}
+
+.reviews {
+  background: #f0eddc;
+}
+
+.service-icon {
+  background: #fff3b3;
+}
+
+.whatsapp-float {
+  background: #21c76a;
+}
+
+.has-scroll-reveal .scroll-reveal {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 650ms ease, transform 650ms cubic-bezier(.2, .7, .25, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.has-scroll-reveal .scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.has-scroll-reveal .service-card.is-visible:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 680px) {
+  html {
+    scroll-padding-top: 110px;
+  }
+
+  .site-header {
+    height: 104px;
+  }
+
+  .header-inner {
+    min-height: 104px;
+  }
+
+  .main-nav {
+    top: 104px;
+    font-size: 17px;
+  }
+
+  .brand img {
+    width: 108px;
+    height: 108px;
+  }
+
+  .footer-brand .brand img {
+    width: 82px;
+    height: 82px;
+  }
+
+  .brand-copy strong {
+    font-size: 18px;
+  }
+
+  .brand-copy small {
+    font-size: 9px;
+  }
+
+  .hero-lead {
+    font-size: 17px;
+  }
+
+  .hero h1 {
+    font-size: clamp(58px, 17vw, 76px);
+  }
+
+  .section h2,
+  .history h2,
+  .reviews h2,
+  .contact-cta h2 {
+    font-size: clamp(52px, 14vw, 68px);
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 16px 18px;
+  }
+
+  .service-card p,
+  .why-list p,
+  .review-card > p {
+    font-size: 15px;
+  }
+
+  .wrap,
+  .header-inner {
+    width: calc(100% - 32px);
+  }
+
+  .proof-strip {
+    justify-content: flex-start;
+    gap: 22px;
+    padding-inline: 16px;
+  }
+
+  .proof-strip > div {
+    min-width: 145px;
+  }
+
+  .hero {
+    min-height: min(690px, calc(100svh - 70px));
+    background-position: 58% center;
+  }
+
+  .hero h1 {
+    font-size: clamp(52px, 15vw, 68px);
+  }
+
+  .hero-note {
+    max-width: 190px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 0;
+    padding: 20px 18px 42px;
+  }
+
+  .service-card p {
+    max-width: 290px;
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .brand-copy strong {
+    font-size: 14px;
+  }
+
+  .brand-copy small {
+    font-size: 7px;
+  }
+
+  .hero-actions .button {
+    gap: 12px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .has-scroll-reveal .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .main-nav {
+    background: #1c1c1c;
+  }
+}
+
+.brand-mark {
+  display: block;
+  flex: 0 0 120px;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: contain;
+  transform: none;
+}
+
+@media (max-width: 680px) {
+  .brand-mark {
+    flex-basis: 88px;
+    width: 88px;
+    height: 88px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-mark {
+    flex-basis: 78px;
+    width: 78px;
+    height: 78px;
+  }
+}
